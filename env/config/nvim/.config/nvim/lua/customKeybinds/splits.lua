@@ -22,7 +22,7 @@ end
 
 -- Horizontal split
 M.horizontalSplit = function ()
-    vim.keymap.set("n", "<leader>ss", function()
+    vim.keymap.set("n", "<leader>hs", function()
         builtin.find_files({
             attach_mappings = function(_, map)
                 map("i", "<CR>", function(prompt_bufnr)

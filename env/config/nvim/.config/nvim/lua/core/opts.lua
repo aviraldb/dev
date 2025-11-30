@@ -1,5 +1,6 @@
 
 -- Options / Settings for Neovim 
+local opt = vim.opt
 
 -- Tab opts
 vim.cmd("set expandtab")
@@ -16,4 +17,9 @@ vim.wo.number = true
 vim.wo.relativenumber = true
 
 -- splits
-vim.opt.splitright = true
+opt.splitbelow = true
+opt.splitright = true
+
+-- Best search settings :)
+opt.smartcase = true
+opt.ignorecase = true

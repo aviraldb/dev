@@ -20,8 +20,8 @@ alias ga='git add'
 alias gap='git add --patch'
 alias gaa='git add .'
 alias gc='git commit'
-alias gp='git push'
-alias gu='git pull'
+# alias gp='git push'
+# alias gu='git pull'
 alias gcl='git clone'
 alias gl='git log --graph --all --decorate --date=iso --pretty=format:"%C(auto)%h%Creset %C(bold blue)(%ad)%Creset %C(yellow)%d%Creset%n%C(bold green)Author:%Creset %an <%ae>%n%C(bold red)Committer:%Creset %cn <%ce>%n%C(bold cyan)Message:%Creset %s%n"'
 
@@ -34,7 +34,8 @@ if command -v zoxide >/dev/null 2>&1; then
 fi
 
 if command -v exa >/dev/null 2>&1; then
-    alias ls='exa -la'
+    alias ls='exa -lah'
 else
     alias ls='ls -lart'
 fi
+alias nano='nvim'
