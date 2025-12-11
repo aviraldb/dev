@@ -7,6 +7,6 @@ return{
     transparetn_background = true,
   },
   config = function()
-    vim.cmd.colorscheme "catppuccin"
+        vim.cmd.colorscheme "catppuccin"
   end
 }

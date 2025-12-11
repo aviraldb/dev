@@ -12,3 +12,6 @@ require ("core.lazy")
 -- Importing keybinds :
 require ("core.keybinds")
 require ("Plugins.keybinds")
+
+-- Importing Colorschemes : 
+require ("core.colorscheme")

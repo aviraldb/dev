@@ -19,6 +19,7 @@ return {
             opencl_ls = {},
             glsl_analyzer = {},
             clangd = {},
+            ccls = {},
             rust_analyzer = {},
             pyright = {},
             basedpyright = {},

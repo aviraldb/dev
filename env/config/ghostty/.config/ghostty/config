@@ -1,0 +1,43 @@
+# -------------------------------------------------------------
+# Appearance :
+# -------------------------------------------------------------
+
+# Theme 
+theme                   = "Catppuccin Mocha"
+
+# Fonts : 
+font-family             = JetBrains Mono Nerd Font 
+font-family-bold        = JetBrains Mono NF Bold 
+font-family-italic      = JetBrains Mono NF Italic 
+font-family-bold-italic = JetBrains Mono NF Bold Italic
+font-size = 18
+
+# Opacity and Blurness of the window : 
+background-opacity      = 0.75
+background-blur         = 80                        
+# blur doesn't works in x11 with gnome but will work with hyprland
+
+# BackGround and ForeGround Colors :
+# (needs to be updated when using hyprland to get backgroud related Colors)
+# backgroud               = RRGGBB
+# foreground              = RRGGBB 
+# selection-background    = RRGGBB
+# selection-foreground    = RRGGBB
+
+# Cursor :  
+# (needs to be updated when using hyprland to get backgroud related Colors)
+# cursor-color            = RRGGBB
+# cursor-opacity          = RRGGBB
+cursor-style            = block 
+cursor-style-blink      = true 
+scroll-to-bottom        = keystroke
+
+
+
+# KeyBinds : 
+keybind = ctrl+shift+c=copy_to_clipboard
+keybind = ctrl+shift+r=reload_config
+
+
+# Miscellanious : 
+# initial-command         = fastfetch
