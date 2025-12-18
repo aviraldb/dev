@@ -24,6 +24,7 @@
 #   build    - Changes to build system or external dependencies
 #   ci       - Changes to CI configuration files and scripts
 #   chore    - Other changes that don't modify src or test files
+#            - Maintenance tasks, tooling, or project setup
 #   revert   - Reverts a previous commit
 #
 # Scope (optional):

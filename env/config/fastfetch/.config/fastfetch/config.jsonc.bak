@@ -14,7 +14,7 @@
     //   },
 },
   
-//  "display": {
+  "display": {
     "separator": "  ",
   },
   "modules": [
@@ -26,8 +26,8 @@
       "keyColor": "33", // = color3
     },
     {
-//      "type": "kernel",
-//      "key": "kernel",
+      "type": "kernel",
+      "key": "kernel",
       "keyColor": "33",
     },
     {
@@ -37,7 +37,7 @@
       "keyColor": "33",
     },
     {
-//      "type": "packages",
+      "type": "packages",
       "format": "{} (pacman)",
       "key": "pkgs  ",
       "keyColor": "33",
@@ -49,8 +49,8 @@
       "keyColor": "33",
     },
     {
-//      "type": "memory",
-//      "key": "memory",
+      "type": "memory",
+      "key": "memory",
       "keyColor": "33",
     },
     "break",

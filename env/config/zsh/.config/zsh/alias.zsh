@@ -27,6 +27,7 @@ alias gl='git log --graph --all --decorate --date=iso --pretty=format:"%C(auto)%
 
 # Extra QoL
 alias technoblade='[[ -n $(pacman -Qdt) ]] && sudo pacman -Rs $(pacman -Qdtq) && echo "killed all orphans" || echo "no orphans to kill nerd"'
+# alias ~='cd ~'
 
 # Conditional Aliases
 if command -v zoxide >/dev/null 2>&1; then
@@ -35,6 +36,7 @@ fi
 
 if command -v exa >/dev/null 2>&1; then
     alias ls='exa -lah'
+    alias ll='ls'
 else
     alias ls='ls -lart'
 fi
