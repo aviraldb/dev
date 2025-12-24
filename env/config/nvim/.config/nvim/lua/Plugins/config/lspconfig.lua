@@ -20,7 +20,13 @@ return {
             glsl_analyzer = {},
             clangd = {},
             ccls = {},
-            rust_analyzer = {},
+            rust_analyzer = {
+                    ["rust-analyzer"] = {
+                        checkOnSave = {
+                            command = "clippy",
+                        },
+                    },
+                },
             pyright = {},
             basedpyright = {},
         }

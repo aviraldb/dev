@@ -5,6 +5,7 @@ return {
             sources = {
                 -- Formatters
                 builtin.formatting.shfmt, -- For Shell scripts
+                builtin.formatting.rustfmt, -- for Rust
                 builtin.formatting.black, -- For Python
                 builtin.formatting.sort, -- python import organiser
                 builtin.formatting.stylua, -- For Lua files
@@ -13,6 +14,7 @@ return {
 
                 -- Linters (Diagnostics)
                 builtin.diagnostics.shellcheck, -- For Shell scripts
+                builtin.diagnostics.clippy, -- for Rust
                 builtin.diagnostics.mypy, -- For Python
                 builtin.diagnostics.selene, -- For Lua
                 builtin.diagnostics.markdownlint, -- For Markdown files

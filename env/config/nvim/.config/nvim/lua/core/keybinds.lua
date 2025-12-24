@@ -17,7 +17,7 @@ require("customKeybinds.splits").horizontalSplit() -- <leader>ss
 
 -- Explorer:
 set({'n'}, ',', ":Ex<CR>")
-set({'n'}, '<leader>e', ":Ex<CR>")
+set({'n'}, '<leader>e', ":Oil<CR>")
 
 -- Terminal in Vertical Split
 set({'n', 'v'}, '<leader>tt', ":vert term . <CR>")

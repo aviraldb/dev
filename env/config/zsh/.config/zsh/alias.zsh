@@ -36,8 +36,9 @@ fi
 
 if command -v exa >/dev/null 2>&1; then
     alias ls='exa -lah'
-    alias ll='ls'
+    alias ll='/usr/bin/ls'
 else
     alias ls='ls -lart'
+    alias ll='/usr/bin/ls'
 fi
 alias nano='nvim'

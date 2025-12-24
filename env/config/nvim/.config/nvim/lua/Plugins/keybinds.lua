@@ -2,7 +2,10 @@
 local set = vim.keymap.set
 
 -- NeoTree 
-set ("n", "<BSlash>", "<cmd>Neotree toggle<CR>") -- spawn a Neotree to the right
+set("n", "<BSlash>", "<cmd>Neotree toggle<CR>") -- spawn a Neotree to the right
+
+-- Oil
+set("n", "-", "<cmd>Oil<CR>", {desc = "Open Parent Directory"}) -- i think you know what it do
 
 -- Telescope 
 local builtin = require('telescope.builtin')

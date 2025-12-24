@@ -1,4 +1,3 @@
-
 ZDOTDIR="$HOME/.config/zsh"
 
 # Sourcing all Modules

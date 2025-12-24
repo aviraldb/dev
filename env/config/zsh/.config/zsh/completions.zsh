@@ -3,7 +3,18 @@
 # Completion Setup
 # --------------------------------------
 
-autoload -Uz compinit && compinit
+# Cache completions and skip security check
+zstyle ':completion:*' use-cache on
+zstyle ':completion:*' cache-path ~/.zsh/cache
+
+# Only run compinit once per day
+autoload -Uz compinit
+if [[ -n ${HOME}/.zcompdump(#qN.mh+24) ]]; then
+    compinit
+else
+    compinit -C  # Skip security check
+fi
+
 zinit cdreplay -q
 
 # Completion styling
