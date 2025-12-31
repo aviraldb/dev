@@ -9,5 +9,6 @@ source "$ZDOTDIR/env.zsh"
 source "$ZDOTDIR/extra.zsh"
 source "$ZDOTDIR/hist.zsh"
 source "$ZDOTDIR/options.zsh"
+source "$SECRETS_DIR/zsh/env.zsh"
 
 source "$ZDOTDIR/shellIntegration.zsh" # last

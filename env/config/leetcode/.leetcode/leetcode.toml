@@ -1,0 +1,32 @@
+[code]
+editor = 'nvim'
+
+# Optional parameter
+# editor_args = ['-nw']
+
+# Optional environment variables (ex. [ "XDG_DATA_HOME=...", "XDG_CONFIG_HOME=...", "XDG_STATE_HOME=..." ])
+editor_envs = []
+
+lang = 'rust'
+
+edit_code_marker = true
+start_marker = "Solution -> "
+end_marker = "------------------------------------------------------------------"
+
+# if include problem description
+comment_problem_desc = true
+# comment syntax
+comment_leading = "//"
+test = true
+
+[cookies]
+csrf = ''
+session = ''
+# leetcode.com or leetcode.cn
+site = "leetcode.com"
+
+[storage]
+cache = 'Problems'
+code = 'code'
+root = '~/.leetcode'
+scripts = 'scripts'
