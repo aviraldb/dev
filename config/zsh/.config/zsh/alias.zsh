@@ -27,6 +27,7 @@ alias gl='git log --graph --all --decorate --date=iso --pretty=format:"%C(auto)%
 
 # Extra QoL
 alias technoblade='[[ -n $(pacman -Qdt) ]] && sudo pacman -Rs $(pacman -Qdtq) && echo "killed all orphans" || echo "no orphans to kill nerd"'
+alias nano='nvim'
 # alias ~='cd ~'
 
 # Conditional Aliases
@@ -41,4 +42,3 @@ else
     alias ls='ls -lart'
     alias ll='/usr/bin/ls'
 fi
-alias nano='nvim'

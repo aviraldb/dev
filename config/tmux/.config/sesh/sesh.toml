@@ -1,0 +1,21 @@
+
+strict_mode = false
+
+sort_order = ["tmux", "tmuxinator", "config", "zoxide"]
+dir_length = 3
+
+
+[default_session]
+startup_command = "nvim +GoToFile"
+preview_command = "eza --all --git --icons --color=always {}"
+# startup_command_ignore_dirs = ["~/repos", "~/.config"]
+
+# For other sessions :
+import = [
+    "~.config/sesh/sessions/muted.toml",
+    "~.config/sesh/sessions/config.toml",
+    "~.config/sesh/sessions/leetcode.toml",
+    "~.config/sesh/sessions/mati.toml",
+    "~.config/sesh/sessions/muted.toml",
+    "~.config/sesh/sessions/obsidian.toml",
+]
