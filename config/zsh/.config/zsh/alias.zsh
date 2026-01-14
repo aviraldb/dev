@@ -12,6 +12,11 @@ alias t='tmux'
 alias nf='fastfetch'
 alias ff='fastfetch'
 
+# Arch Aliases
+alias S='yay -Ss'
+alias I='yay -S --noconfirm'
+alias U='yay -Syu --noconfirm'
+
 # Git Aliases
 alias lg='lazygit'
 alias gd='git diff'
