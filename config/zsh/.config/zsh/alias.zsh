@@ -12,11 +12,6 @@ alias t='tmux'
 alias nf='fastfetch'
 alias ff='fastfetch'
 
-# Arch Aliases
-alias S='yay -Ss'
-alias I='yay -S --noconfirm'
-alias U='yay -Syu --noconfirm'
-
 # Git Aliases
 alias lg='lazygit'
 alias gd='git diff'
@@ -31,7 +26,7 @@ alias gcl='git clone'
 alias gl='git log --graph --all --decorate --date=iso --pretty=format:"%C(auto)%h%Creset %C(bold blue)(%ad)%Creset %C(yellow)%d%Creset%n%C(bold green)Author:%Creset %an <%ae>%n%C(bold red)Committer:%Creset %cn <%ce>%n%C(bold cyan)Message:%Creset %s%n"'
 
 # Extra QoL
-alias technoblade='[[ -n $(pacman -Qdt) ]] && sudo pacman -Rs $(pacman -Qdtq) && echo "killed all orphans" || echo "no orphans to kill nerd"'
+alias technoblade='[[ -n $(pacman -Qdt) ]] && sudo pacman -Rs --noconfirm $(pacman -Qdtq) && echo "killed all orphans" || echo "no orphans to kill nerd"'
 alias nano='nvim'
 # alias ~='cd ~'
 
