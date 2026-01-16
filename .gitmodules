@@ -1,0 +1,3 @@
+[submodule "nixos"]
+	path = nixos
+	url = git@github.com:aviraldb/NixOS.git
