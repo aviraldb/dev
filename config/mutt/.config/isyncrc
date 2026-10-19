@@ -1,0 +1,33 @@
+# vim: filetype=mbsync
+
+###########################################
+
+# Gmail <aviralkmdubey@gmail.com> Sync
+
+IMAPAccount gmail
+Host imap.gmail.com
+Port 993
+User aviralkmdubey@gmail.com
+PassCmd "pass show mail/aviralkmdubey@gmail.com"
+TLSType IMAPS
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+IMAPStore gmail-remote
+Account gmail
+
+MaildirStore gmail-local
+Path ~/.mail/gmail/
+Inbox ~/.mail/gmail/INBOX
+Subfolders Verbatim
+
+Group all 
+
+Channel gmail
+Far :gmail-remote:
+Near :gmail-local:
+Create Both
+Expunge Both
+Patterns *
+SyncState *
+
+###########################################

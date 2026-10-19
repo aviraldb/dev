@@ -1,14 +1,15 @@
+// Shell:
+include "modules/noctalia.kdl"
+
 // Imports:
-include "modules/inputs.kdl"
 include "modules/outputs.kdl"
-include "modules/appearance.kdl"
+include "modules/inputs.kdl"
 include "modules/startup.kdl"
+include "modules/appearance.kdl"
 include "modules/window-rules.kdl"
 include "modules/keybinds.kdl"
 include "modules/miscellanious.kdl"
 
-// Shell:
-include "modules/noctalia.kdl"
 
 // Theme:
 include "theme/noctalia.kdl"

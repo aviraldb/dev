@@ -17,7 +17,7 @@ input {
     touchpad {
         // off
         tap         // tap to click
-        dwt         // disable while typeing
+        // dwt         // disable while typeing
         drag true   // tap and drag
         natural-scroll
         scroll-method "two-finger"

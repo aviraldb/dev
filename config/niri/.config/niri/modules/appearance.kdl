@@ -1,7 +1,18 @@
+
+window-rule {
+    opacity 0.95
+    background-effect { blur true; }
+    draw-border-with-background false
+    geometry-corner-radius 10
+    clip-to-geometry true
+}
+
 layout {
-    gaps 10
+    gaps 8
     center-focused-column "never"
     always-center-single-column
+
+    default-column-width { proportion 0.5; }
 
     // Widths that "switch-preset-column-width" (Mod+R) toggles between.
     preset-column-widths {
@@ -18,21 +29,15 @@ layout {
         proportion 0.25
     }
 
-    default-column-width { proportion 1.0; }
 
     focus-ring {
         off
         width 1
-        active-color "#7fc8ff"
-        inactive-color "#505050"
     }
 
     border {
         // off
         width 1
-        active-color "#7fc8ff"
-        inactive-color "#505050"
-        urgent-color "#9b0000"
     }
 
     shadow {
@@ -40,8 +45,6 @@ layout {
         softness 30
         spread 10
         offset x=5 y=5
-        color "#0007"
-        inactive-color "#0007"
     }
 }
 

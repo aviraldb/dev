@@ -6,9 +6,12 @@ return {
         event = "VeryLazy",
         dependencies = { "MunifTanjim/nui.nvim" },
         opts = {
+            disable_mouse = false,
             disabled_filetypes = {
                 ["leetcode.nvim"] = true,
                 ["pager"] = true,
+                ["text"] = true,
+                ["markdown"] = true,
             },
             max_time = 1000,
             max_count = 5,

@@ -1,4 +1,3 @@
-
 if status is-interactive 
 
     # Git support:

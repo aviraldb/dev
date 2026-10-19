@@ -1,30 +1,39 @@
-// This applies to all 
-window-rule {
-    opacity 0.95
-    background-effect { blur true; }
-    draw-border-with-background false
-    geometry-corner-radius 12
-    clip-to-geometry true
-}
+// This applies to all
 
 // Apply with match conditions
 // Open the zen-browser picture-in-picture player as floating by default.
 window-rule {
-    match app-id=r#"zen-browser$"# title="^Picture-in-Picture$"
+    match app-id=r#"^Minecraft$"#
+    match app-id=r#"^zen$"#
+    match app-id=r#"^zen-browser$"#
+
+    match title=r#"^Minecraft.*"#
+
+    default-column-width { proportion 1.0; }
+}
+
+window-rule {
+    match app-id=r#"^zen-browser$"#
+    match title=r#"^Picture-in-Picture$"#
+
     open-floating true
 }
 
 // Allow floating
 window-rule {
-    match app-id=r#"org-tlauncher-tlauncher-rmo-TLauncher"#
-    match title=r#"^TLauncher%$"#
+    match app-id=r#"^org-tlauncher-tlauncher-rmo-TLauncher$"#
+    match title=r#"^Extension:.*"#
 
     open-floating true
 }
 
+// restrict screen capture
 window-rule {
     match app-id=r#"^org\.keepassxc\.KeePassXC$"#
-    match app-id=r#"^org\.gnome\.World\.Secrets$"#
+    block-out-from "screen-capture"
+}
 
+window-rule {
+    match app-id=r#"^org\.gnome\.World\.Secrets$"#
     block-out-from "screen-capture"
 }

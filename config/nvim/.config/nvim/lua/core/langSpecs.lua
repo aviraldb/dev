@@ -4,7 +4,7 @@ local M = {}
 M.servers = {
     "lua_ls",        -- lua
     "clangd",        -- c, cpp
-    "rust_analyser", -- rust
+    "rust_analyzer", -- rust
     "gopls",         -- go
     "org",           -- org
     "qmlls",         -- qml

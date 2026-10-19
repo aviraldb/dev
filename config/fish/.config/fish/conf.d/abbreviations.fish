@@ -12,9 +12,11 @@ if status is-interactive
     abbr -a leet "nvim -c Leet"
 
     if type -q eza 
-        abbr -a l "eza -lAh"
+        abbr -a l "eza -lh"
+        abbr -a lt "eza --tree -A --group-directories-last"
     else
-        abbr -a l  "ls -lhAF"
+        abbr -a l  "ls -lhF"
+        abbr -a lt "tree --filesfirst"
     end
 
     abbr -a lg "lazygit"

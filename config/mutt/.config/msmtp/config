@@ -1,0 +1,23 @@
+# vim: filetype=msmtp
+
+defaults
+auth           on
+tls            on
+tls_trust_file /etc/ssl/certs/ca-certificates.crt
+logfile        ~/.local/state/msmtp/msmtp.log
+
+account gmail
+host smtp.gmail.com
+port 587
+from aviralkmdubey@gmail.com
+user aviralkmdubey@gmail.com
+passwordeval "pass show mail/gmail"
+
+account personal
+host smtp.zohomail.com
+port 587
+from aviral@aviraldb.in
+user aviral@aviraldb.in
+passwordeval "pass show mail/personal"
+
+account default : personal

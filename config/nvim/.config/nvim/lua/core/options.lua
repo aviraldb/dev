@@ -23,8 +23,8 @@ vim.o.exrc = true
 vim.wo.number = true
 vim.wo.relativenumber = true
 vim.o.cursorline = false
-vim.opt.scrolloff = math.floor(vim.o.lines / 2) - 15
-vim.opt.sidescrolloff = math.floor(vim.o.lines / 2) - 15
+vim.opt.scrolloff = math.floor(vim.o.lines / 2) - 5
+vim.opt.sidescrolloff = math.floor(vim.o.lines / 2) - 5
 vim.opt.termguicolors = true
 vim.opt.signcolumn = "yes:1"
 

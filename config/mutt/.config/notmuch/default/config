@@ -1,0 +1,45 @@
+# vim: filetype=dosini
+
+##################################################
+
+# NotMuch configuration:
+
+[database]
+path=/home/aviral/.mail
+
+# User settings
+[user]
+name=Aviral Dubey
+primary_email=aviral@aviraldb.in
+# ';' seperated list of other mails 
+other_email=aviralkmdubey@gmail.com
+
+[new]
+# ';' seperated list of tags assigned to new mails
+tags=unread;
+# ';' seperated list of filename and dirname that
+# will be ignored my `notmuch new`
+ignore=.mbsyncstate;.uidvalidity;
+
+# ';' seperated list of tags to ignore during search
+[search]
+exclude_tags=deleted;spam;
+
+[maildir]
+synchronize_flags=true 
+
+# GPG crypto binary (absolute or $PATH)
+[crypto]
+gpg_path=gpg
+
+# Custom Queries :
+# <query-name>=<query>
+[query]
+inbox=tag:inbox
+unread=tag:unread
+work-inbox=tag:work and tag:inbox
+gmail-inbox=tag:gmail and tag:inbox
+today=date:today
+flagged=tag:flagged
+
+##################################################
